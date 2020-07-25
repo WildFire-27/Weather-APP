@@ -1,0 +1,21 @@
+*{
+ margin:0;
+ margin-top: 50px;
+ text-align: center;
+}
+label{
+    font-size: 90px;
+
+}
+input {
+    height: 80px;
+    width: 200px;
+    font-size: 60px;
+}
+button{
+    font-size: 60px;
+    height: 85px;
+    width: 110px;
+    background-color: black;
+    color: white;
+}
