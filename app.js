@@ -23,7 +23,7 @@ app.post("/", function (req, res) {
     console.log(response.statusCode);
 //message the data or shows the data
     response.on("data", function (data) {
-      const weatherData = JSON.parse(data);
+      const weatherData = JSON.parse(data);//data is what u call from query which shud b converted from hex to js object 
       const temp = weatherData.main.temp;
       const descirption = weatherData.weather[0].description;//copy path from json awesome viewer
       const icon = weatherData.weather[0].icon;
@@ -40,7 +40,7 @@ app.post("/", function (req, res) {
 });//api from weather report and putting here api parameter frm postman
 
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Port 3000 is started here");
 });
 
